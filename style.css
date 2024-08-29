@@ -1,0 +1,66 @@
+.expand {
+    max-height: 300px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+}
+
+
+.mySlides {
+    transition: opacity 0.5s ease-in-out;
+}
+.villa {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.villa-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.villa-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.villa-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.villa-price {
+    color: #f00;
+    font-size: 16px;
+}
+
+.villa-address {
+    margin-top: 5px;
+}
+
+.villa-features {
+    margin-top: 5px;
+}
+
+.villa-features span {
+    margin-right: 10px;
+}
+
+.villa-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
