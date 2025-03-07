@@ -8,91 +8,84 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./index.js" defer></script>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-    <div class="md:flex gap-96 mt-6 hidden ">
-        <div class="flex gap-16  ">
-            <div class="flex gap-2 items-center ml-56 ">
-                <img src="./images/emai.png" alt="mail" width="30px" height="30px">
+    <div class="md:flex gap-x-96 mt-3 hidden mb-0.5">
+        <div class="flex gap-16">
+            <div class="flex gap-2 items-center md:ml-56 ml-4">
+                <img src="./images/emai.png" alt="mail" width="20px" height="20px">
                 <p class="font-mono text-xs text-slate-500">info@company.com</p>
             </div>
             <div class="flex gap-2 items-center">
-                <img src="./images/map.png" alt="map" width="30px" height="30px">
+                <img src="./images/map.png" alt="map" width="20px" height="20px">
                 <p class="font-mono text-xs text-slate-500">Isles Beach, FL 33160</p>
             </div>
         </div>
         <div class="flex items-center gap-4">
-            <a href="https://www.facebook.com/"><img src="./images/10092202.png" alt="" width="20px" height="20px" class="hover:bg-orange-500 rounded-full p-1.5 size-9"></a>
-            <a href="https://in.linkedin.com/"><img src="./images/10092249.png" alt="" width="20px" height="20px" class="hover:bg-orange-500 rounded-full p-1.5 size-9"></a>
-            <a href="https://twitter.com/?lang=en-in"><img src="./images/10092328.png" alt="" width="20px"
-                    height="20px" class="hover:bg-orange-500 rounded-full p-1.5 size-9"></a>
-            <a href="https://www.instagram.com/"><img src="./images/15455779.png" alt="" width="20px" height="20px" class="hover:bg-orange-500 rounded-full p-1.5 size-9"></a>
+            <a href="https://www.facebook.com/"><img src="./images/10092202.png" alt="" width="20px" height="10px"
+                    class="hover:bg-orange-500 rounded-full p-1.5 size-9"></a>
+            <a href="https://in.linkedin.com/"><img src="./images/10092249.png" alt="" width="20px" height="10px"
+                    class="hover:bg-orange-500 rounded-full p-1.5 size-9"></a>
+            <a href="https://twitter.com/?lang=en-in"><img src="./images/10092328.png" alt="" width="20px" height="10px"
+                    class="hover:bg-orange-500 rounded-full p-1.5 size-9"></a>
+            <a href="https://www.instagram.com/"><img src="./images/15455779.png" alt="" width="20px" height="10px"
+                    class="hover:bg-orange-500 rounded-full p-1.5 size-9"></a>
         </div>
     </div>
     <br>
     <hr class="md:block hidden">
-    <div class="flex mt-8 ">
-        <div class="flex gap-20 ">
+    <div class="flex mt-8">
+        <div class="flex gap-20">
             <p class="text-2xl font-bold md:ml-56 mx-11">VILLA</p>
             <img src="./images/3917215.png" alt="" class="md:hidden size-9 " onclick="show()">
         </div>
-        <div class="md:flex gap-11 items-center ml-80 hidden md:flex-row flex-col bg-black md:bg-white" id="ham">
-            <a href="./index.html" class="text-orange-500 text-sm  font-medium font-sans font-black ">Home</a>
+        <div class="md:flex gap-11 items-center md:ml-80 ml-4 hidden md:flex-row flex-col bg-black md:bg-white" id="ham">
+            <a href="./index.html" class="text-orange-500 text-sm font-medium font-sans font-black">Home</a>
             <a href="./property.html"
-                class="hover:text-orange-500  text-sm font-medium text-black  font-sans font-black ">Properties</a>
-            <a href="./property.html"
-                class="hover:text-orange-500  text-sm font-medium text-black  font-sans font-black ">Property
-                Details</a>
+                class="hover:text-orange-500 text-sm font-medium text-black font-sans font-black">Properties</a>
+            <a href="./selling.html"
+                class="hover:text-orange-500 text-sm font-medium text-black font-sans font-black">Property Details</a>
             <a href="./contact.html"
-                class="hover:text-orange-500  text-sm font-medium text-black  font-sans font-black ">Contact
-                Us</a>
-
-            <div class="flex items-center ">
+                class="hover:text-orange-500 text-sm font-medium text-black font-sans font-black">Contact Us</a>
+            <div class="flex items-center">
                 <a href="./selling.html"
-                    class="absolute rounded-r-lg gap-0 px-4 py-1 font-sans w-max text-sm hover:text-orange-500  text-white "
-                    style="background-color: rgb(17, 17, 17); ">Schedule
-                    a visit</a>
-                <img class="rounded-full gap-0 relative ml-[-15px] p-0.5 " src="./images/calanderpic.png"
+                    class="absolute rounded-r-lg gap-0 px-4 py-1 font-sans w-max text-sm hover:text-orange-500 text-white"
+                    style="background-color: rgb(17, 17, 17);">Schedule a visit</a>
+                <img class="rounded-full gap-0 relative ml-[-15px] p-0.5" src="./images/calanderpic.png"
                     style="background-color: rgb(247, 104, 22);" alt="calander" width="42px" height="50px">
-
             </div>
         </div>
     </div>
     <div class="max-w-screen-lg relative mx-auto mt-16">
-        <!-- Slide 1 -->
         <div id="slide1"
             class="mySlides relative flex flex-col items-center justify-center block opacity-100 transition-opacity">
-            <img src="./images/banner-01.jpg" alt="Toronto, Canada" class="w-full h-[500px]">
+            <img src="./images/banner-01.jpg" alt="Toronto, Canada" class="w-full h-[500px] object-cover">
             <p class="absolute bottom-10 bg-white p-2 w-full text-center text-sm font-medium">Toronto , <span
                     class="text-orange-500">Canada</span></p>
             <p class="absolute top-1/2 transform -translate-y-1/2 text-5xl text-white text-center font-black">
                 HURRY!<br>GET THE BEST<br> FOR YOU</p>
         </div>
-        <!-- Slide 2 -->
         <div id="slide2"
             class="mySlides relative flex flex-col items-center justify-center hidden opacity-0 transition-opacity">
-            <img src="./images/banner-02.jpg" alt="Melbourne, Australia" class="w-full">
+            <img src="./images/banner-02.jpg" alt="Melbourne, Australia" class="w-full h-[500px] object-cover">
             <p class="absolute bottom-10 bg-white p-2 w-full text-center text-sm font-medium">Melbourne , <span
                     class="text-orange-500">Australia</span></p>
             <p class="absolute top-1/2 transform -translate-y-1/2 text-5xl text-white text-center font-black">BE
                 QUICK!<br>GET THE BEST<br> VILLA IN THE TOWN</p>
         </div>
-        <!-- Slide 3 -->
         <div id="slide3"
             class="mySlides relative flex flex-col items-center justify-center hidden opacity-0 transition-opacity">
-            <img src="./images/banner-03.jpg" alt="Miami, South Florida" class="w-full">
+            <img src="./images/banner-03.jpg" alt="Miami, South Florida" class="w-full h-[500px] object-cover">
             <p class="absolute bottom-10 bg-white p-2 w-full text-center text-sm font-medium">Miami, <span
                     class="text-orange-500">South Florida</span></p>
             <p class="absolute top-1/2 transform -translate-y-1/2 text-5xl text-white text-center font-black">ACT
                 NOW!<br>GET THE<br>LEVEL HIGHEST<br> PENTHOUSE</p>
         </div>
-        <!-- Navigation Buttons -->
         <a class="prev absolute top-1/2 left-0 text-white font-bold text-lg p-4 cursor-pointer transform -translate-y-1/2 hover:bg-black hover:bg-opacity-50"
-            onclick="plusSlides(-1)">&#10094;</a>
+            onclick="plusSlides(-1)">❮</a>
         <a class="next absolute top-1/2 right-0 text-white font-bold text-lg p-4 cursor-pointer transform -translate-y-1/2 hover:bg-black hover:bg-opacity-50"
-            onclick="plusSlides(1)">&#10095;</a>
+            onclick="plusSlides(1)">❯</a>
     </div>
     <br>
 
@@ -104,7 +97,7 @@
                     style="background-color: rgb(245, 141, 57);"></a>
         </div>
         <div class="md:flex md:flex-row flex-col flex md:gap-11 mx-2 md:mx-0">
-            <div class="flex flex-col mt-32   ">
+            <div class="flex flex-col mt-32">
                 <b class="text-base text-red-600 ">|FEATURED <br></b>
                 <b>
                     <h1 class="font-bold text-5xl">Best Apartment <br>& Sea View</h1>
@@ -129,9 +122,8 @@
                     <hr class="border-t-2 border-gray-400">
                     <div class="text-sm hidden" id="q2"><br>
                         <p>Dolor<b>almesit amet,</b> consectetur adipiscing elit, sed<br> doesn't eiusmod tempor
-                            incididunt
-                            ut labore
-                            consectetur<br><span class="font-light text-red-600">adipiscing </span> elit, sed do eiusmod
+                            incididunt ut la consectetur<br><span class="font-light text-red-600">adipiscing </span>
+                            elit, sed do eiusmod
                             tempor incididunt ut labore<br> et dolore magna aliqua.</p>
                     </div>
                     <br>
@@ -194,7 +186,8 @@
         </div>
         <img src="./images/video-frame.jpg" alt="" width="75%" class="absolute md:mt-72 mt-40 rounded-md">
         <a href="https://youtube.com/" class="absolute md:mt-[500px] mt-48">
-            <img src="images/button.png" alt="Play button" class="rounded-full p-1.5 bg-orange-500 bg-opacity-50" width="50px" height="50px">
+            <img src="images/button.png" alt="Play button" class="rounded-full p-1.5 bg-orange-500 bg-opacity-50"
+                width="50px" height="50px">
         </a>
     </div>
     <div class="flex md:mt-80 mt-56 md:space-x-48 md:flex-row flex-col md:space-y-0 space-y-16 md:p-0 p-11">
@@ -217,13 +210,13 @@
 
 
     <div style="background-color: aliceblue;" class="mt-32 py-7 flex flex-col">
-        <div class="flex md:flex-row flex-col ">
+        <div class="flex md:flex-row flex-col gap-11 ">
             <div class="flex flex-col md:ml-16 ">
                 <a href="./index.html" class="text-red-700 p-3 text-sm font-medium text-center">| BEST DEALS</a>
                 <p class="font-black md:text-3xl p-3 text-2xl  text-center w-max">Find Your Best Deal<br> Right Now!</p>
             </div>
             <div
-                class="flex md:flex-row flex-col md:space-x-16 md:ml-96 md:left-96 md:space-y-0 space-y-6  justify-center md:items-end ml-16  ">
+                class="flex md:flex-row flex-col md:space-x-16 md:ml-80 md:left-96 md:space-y-0 space-y-6  justify-center md:items-end ml-16  ">
                 <button onclick="change('Apartment')"
                     class="bg-orange-500 align-middle h-8 w-32 px-2 hover:text-white hover:bg-black rounded-md text-base font-medium ">
                     Apartment</button>
@@ -258,16 +251,14 @@
             <img src="./images/deal-01.jpg" alt="" width="456px" class="md:ml-16 justify-center h-[278px] mt-32 ">
             <div class="flex flex-col mt-32 md:w-2/6">
                 <p class="font-bold text-lg ">Extra Info About Property</p>
-                <p class="font-light text-neutral-600 font-sans text-sm">Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Eius,
-                    officiis? Deserunt, suscipit
-                    exercitationem. Voluptatibus, error quis quasi dolores eum consequatur blanditiis distinctio fugit
-                    corrupti, numquam at eius, voluptate maxime. Rem.<br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officiis? Deserunt, suscipit
-                    exercitationem. Voluptatibus, error quis quasi dolores eum consequatur blanditiis distinctio fugit
-                    corrupti, numquam at eius, voluptate maxime. Rem.</p>
+                <p class="font-light text-neutral-600 font-sans text-sm">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum
+                    suspendisse.<br>
+
+                    Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch
+                    twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.
                 <div class="flex items-center pt-3 ml-4">
-                    <a href="./selling.html" class="relative  rounded-r-lg gap-0 px-3 "
+                    <a href="./selling.html" class="relative  rounded-r-lg gap-0 px-3 hover:text-orange-500 "
                         style="background-color: rgb(17, 17, 17); color: white;">Schedule
                         a visit</a>
                     <img class="rounded-full gap-0 absolute ml-[-15px] p-0.5 " src="./images/calanderpic.png"
@@ -300,14 +291,13 @@
             <img src="./images/deal-03.jpg" alt="" width="456px" class="md:ml-16 justify-center h-[278px] mt-32 ">
             <div class="flex flex-col mt-32 md:w-2/6">
                 <p class="font-bold text-lg ">Extra Info About Penthouse</p>
-                <p class="font-light text-neutral-600 font-sans text-sm">Lorem ipsum dolor sit amet, consectetur<br>
-                    adipiscing elit, do eiusmod tempor pack<br> incididunt ut labore et dolore magna aliqua quised ipsum
+                <p class="font-light text-neutral-600 font-sans text-sm">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum
                     suspendisse.<br>
 
-                    Swag fanny pack lyft blog twee. JOMO<br> ethical copper mug, succulents typewriter<br> shaman DIY
-                    kitsch
-                    twee taiyaki fixie hella<br> venmo after messenger poutine next level<br> humblebrag swag franzen.
-                </p>
+                    Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch
+                    twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.
+                
                 <div class="flex items-center pt-3 ml-4">
                     <a href="selling.html" class="relative  rounded-r-lg gap-0 px-3 "
                         style="background-color: rgb(17, 17, 17); color: white;">Schedule
@@ -341,18 +331,16 @@
             <img src="./images/deal-06.jpg" alt="" width="456px" class="md:ml-16 justify-center h-[278px] mt-32 ">
             <div class="flex flex-col mt-32 md:w-2/6">
                 <p class="font-bold text-lg ">Extra Info About Property</p>
-                <p class="font-light text-neutral-600 font-sans text-sm">Lorem ipsum dolor sit amet, consectetur<br>
-                    adipiscing elit, do eiusmod tempor pack<br> incididunt ut labore et dolore magna aliqua quised ipsum
+                <p class="font-light text-neutral-600 font-sans text-sm">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum
                     suspendisse.<br>
 
-                    Swag fanny pack lyft blog twee. JOMO<br> ethical copper mug, succulents typewriter<br> shaman DIY
-                    kitsch
-                    twee taiyaki fixie hella<br> venmo after messenger poutine next level<br> humblebrag swag franzen.
-                </p>
-
+                    Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch
+                    twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.
+                
                 <div class="flex items-center pt-3 ml-4">
                     <a href="./selling.html" class="relative  rounded-r-lg gap-0 px-3 "
-                        style="background-color: rgb(17, 17, 17); color: white;">Schedule
+                        style="background-color: rgb(17, 17, 17); color: white;" class="hover:text-orange-500">Schedule
                         a visit</a>
                     <img class="rounded-full gap-0 absolute ml-[-15px] p-0.5 " src="./images/calanderpic.png"
                         style="background-color: rgb(247, 97, 10);" alt="calander" width="24px" height="20px">

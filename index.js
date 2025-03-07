@@ -73,20 +73,20 @@ const villaContainer = document.getElementById("villas");
 villas.forEach((villa, index) => {
     const villaElement = document.createElement("div");
     villaElement.innerHTML = `
-        <div class="flex flex-col items-center bg-white shadow-lg rounded-lg space-y-16"><a href="./selling.html">
-            <img src="${villa.image}" class="villa-img rounded-lg w-max h-48 object-cover"  alt="${villa.title}"></a>
+        <div class="flex flex-col items-center bg-white shadow-lg rounded-lg space-y-9 m-2.5"><a href="./selling.html">
+            <img src="${villa.image}" class="villa-img rounded-lg w-max h-48 object-cover px-2.5"  alt="${villa.title}"></a>
             <div class="villa-details text-center space-y-2 flex flex-col">
                 <div class="flex justify-between items-center">
-                    <span class="villa-title bg-blue-200 p-1 rounded-full text-sm font-semibold">${villa.title}</span>
-                    <span class="villa-price text-red-500 font-bold">$${villa.price.toLocaleString()}</span>
+                    <span class="villa-title bg-blue-200 px-2 ml-2.5 rounded-full text-sm font-semibold">${villa.title}</span>
+                    <span class="villa-price text-red-500 font-bold mr-2.5">$${villa.price.toLocaleString()}</span>
                 </div><div class="flex flex-col">
                 <a href="./selling.html" class="villa-address font-bold">${villa.address}</a>
                 <p class="villa-features ">Bedrooms:<b>${villa.bedrooms}</b>  | Bathrooms: <b>${villa.bathrooms}</b></p>
-                <p class="villa-features">Area: <b>${villa.area} sqft</b> | Floor: <b>${villa.floor}</b>th| Parking: <b>${villa.parking}</b>cars</p>
+                <p class="villa-features m-0.5">Area: <b>${villa.area} sqft</b> | Floor: <b>${villa.floor}</b>th| Parking: <b>${villa.parking}</b>cars</p>
             </div></div>
-            <a href="./selling.html" class="bg-black text-white font-normal py-0.5 px-4 rounded-full hover:bg-orange-500 hover:text-black">Schedule a Visit</a>
+            <a href="./selling.html" class="bg-black text-white font-normal py-0.5 px-4 my-3  rounded-full hover:bg-orange-500 hover:text-black ">Schedule a Visit</a>
         </div>
-    `;
+ `;
     villaElement.classList.add("villa", "w-full", "md:w-max", "p-4", "box-border");
 
     if (index % 3 === 0) {
